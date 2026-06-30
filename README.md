@@ -11,17 +11,17 @@ Install NodeJS, NPM, GIT and PM2 on your server:
 
 ### Debian & Ubuntu
 ```
-$> apt-get install nodejs npm git
-$> npm install pm2 -g
+apt-get install nodejs npm git
+npm install pm2 -g
 ```
 ### CentsOS & RHEL
 ```
-$> yum install nodejs npm git
-$> npm install pm2 -g
+yum install nodejs npm git
+npm install pm2 -g
 ```
 Check the version of NodeJS, it should be version 6 or higher:
 ```
-$> nodejs -v
+nodejs -v
 v6.14.2
 ```
 If it is lower than 6, you need to upgrade your linux OS or install nodejs from its website:
@@ -29,7 +29,7 @@ https://nodejs.org/en/download/
 
 Clone repository on your server:
 ```
-$> git clone https://github.com/FreedomPrevails/JSMTProxy.git
+git clone https://github.com/FreedomPrevails/JSMTProxy.git
 ```
 Enter JSMTProxy directory and edit config file (config.json) if you wish. You can change the secret and listening port. it is in json format.
 
@@ -39,13 +39,13 @@ Enter JSMTProxy directory and edit config file (config.json) if you wish. You ca
     }
 Start the app in cluster mode using pm2:
 ```
-$> pm2 start mtproxy.js -i max
+pm2 start mtproxy.js -i max
 ```
 You can use pm2 to list running processes and check their logs:
 ```
-$> pm2 list
-$> pm2 log mtproxy
-$> pm2 show mtproxy
+pm2 list
+pm2 log mtproxy
+pm2 show mtproxy
 ```
 ## Windows Installation
 
