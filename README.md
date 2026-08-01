@@ -29,7 +29,7 @@ https://nodejs.org/en/download/
 
 Clone repository on your server:
 ```
-git clone https://github.com/Unknown-sir/JSMTProxy/JSMTProxy.git
+git clone https://github.com/Unknown-sir/JSMTProxy.git
 ```
 Enter JSMTProxy directory and edit config file (config.json) if you wish. You can change the secret and listening port. it is in json format.
 
